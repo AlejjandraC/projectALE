@@ -32,24 +32,16 @@
 
 $("#wrapper").css("width", 200);
 $("#wrapper").css("margin", "auto");
- // bind on a key up (or when its released)
  
+ 
+ // bind on a key up (or when its released)
     $("#msg").on('keyup', function (e) {
 
         // if its the enter key, (called key 13)
         if (e.keyCode == 13) {
 
             // get message from the text field
-            var txt = document.getElementById('msg').value;
-
-            output("\n Me:  " + txt);
-
-            // call the main brain       
-            parseCommand(txt);
-
-            // wipe the text field        
-            document.getElementById('msg').value = '';
-
+            var txt = document.getElementById('msg').value
         }
 
     });
